@@ -1,6 +1,4 @@
 "use client"
-import { db } from '@/utils/dbConfig';
-import { Budgets, Expenses } from '@/utils/schema';
 import { useUser } from '@clerk/nextjs';
 import { desc, eq, getTableColumns, sql } from 'drizzle-orm';
 import React, { useEffect, useState } from 'react'
@@ -21,9 +19,10 @@ import {
 } from "@/components/ui/alert-dialog"
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
-// import EditBudget from '../_components/EditBudget';
 import AddExpense from '../_components/AddExpense';
 import EditBudget from '../_components/EditBudget';
+import { db } from '@/utils/dbconfig';
+import { Budgets, Expenses } from '@/utils/Schema';
 
 function ExpensesScreen({params}) {
     const {user}=useUser();
