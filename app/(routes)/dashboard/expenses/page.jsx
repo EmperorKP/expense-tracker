@@ -1,6 +1,6 @@
 "use client"
-import { db } from '@/utils/dbConfig';
-import { Budgets, Expenses } from '@/utils/schema';
+import { db } from '@/utils/dbconfig';
+import { Budgets, Expenses } from '@/utils/Schema';
 import { desc, eq } from 'drizzle-orm';
 import React, { useEffect, useState } from 'react'
 import ExpenseListTable from './_components/ExpenseListTable';
