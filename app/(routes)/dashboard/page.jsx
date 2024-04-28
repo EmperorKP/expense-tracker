@@ -4,7 +4,7 @@ import { UserButton, useUser } from "@clerk/nextjs";
 
 import { db } from '@/utils/dbconfig';
 import { desc, eq, getTableColumns, sql } from 'drizzle-orm';
-import { Budgets, Expenses } from '@/utils/schema';
+import { Budgets, Expenses } from '@/utils/Schema';
 import BudgetItem from './budgets/_components/BudgetItem';
 import ExpenseListTable from './expenses/_components/ExpenseListTable';
 import Head from 'next/head';
